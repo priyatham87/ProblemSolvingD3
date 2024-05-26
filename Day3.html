@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3</title>
+</head>
+<body>
+    <pre>
+        var n=123;
+        var temp=n;
+        var rev=0;
+        while(n>0)
+        {
+           var rem=n%10;
+            rev=rev*10+rem;
+            n=Math.floor(n/10);
+        }
+        console.log(rev+" reverse number of "+temp);
+        <p>output:321</p>
+
+        var n1=108;
+        var n2=8;
+        var fn=String(n1);
+        var sn=String(n2); 
+        console.log(fn.includes(sn));
+        <p>output:true</p>
+
+        var n3=535;
+        var n4=6;
+        var fn=String(n3);
+        var sn=String(n4); 
+        console.log(fn.includes(sn));
+        <p>output:false</p>
+
+        var a=22;
+        switch(a%2<1)
+        {
+            case true: 
+            console.log("given number "+ a+" is even");
+            break;
+
+            case false : 
+            console.log("odd");             
+            break;
+
+            default: 
+            console.log("not a number");
+        }
+        <p>output:even number 22 is even</p>
+
+
+    
+
+    </pre>
+    <script>
+        //reverse a number using while loop
+        var n=123;
+        var temp=n;
+        var rev=0;
+        while(n>0)
+        {
+           var rem=n%10;
+            rev=rev*10+rem;
+            n=Math.floor(n/10);
+        }
+        console.log(rev+" reverse number of "+temp);
+        
+        //return true if secong input  digit is present in value input value
+        var n1=108;
+        var n2=8;
+        var fn=String(n1);
+        var sn=String(n2); 
+        for(i=0;i<fn.length;i++)
+        {
+            for(j=0;j<sn.length;j++)
+            {
+                if(fn[i]==sn[j])
+                {
+                    console.log(sn[j]);
+                    console.log(" if input 2 value is present in input value one returns true");
+                } 
+            }
+        }
+
+        var n3=535;
+        var n4=6;
+        var fn=String(n3);
+        var sn=String(n4); 
+        for(i=0;i<fn.length;i++)
+        {
+            for(j=0;j<sn.length;j++)
+            {
+                if(fn[i]==sn[j])
+                {
+                    console.log("true");
+                } 
+                else
+                {
+                    console.log(" if input 2 value is present in input value one returns false");
+                }
+            }
+        }
+
+        //even numbers using switch case
+        var a=22;
+        switch(a%2<1)
+        {
+            case true: 
+            console.log("given number "+ a+" is even");
+            break;
+
+            case false : 
+            console.log("odd");             
+            break;
+
+            default: 
+            console.log("not a number");
+        }
+
+
+    </script>
+    
+</body>
+</html>
